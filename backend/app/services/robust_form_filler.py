@@ -113,45 +113,59 @@ class RobustFormFiller:
         if page_num == 1:
             if 'first_name' in coordinates:
                 x, y = coordinates['first_name']
-                page.insert_text((x, y), personal_info.get('first_name', 'John'), 
-                               fontsize=self.font_size, color=(0, 0, 0))
-                print(f"Filling first_name at ({x}, {y}): {personal_info.get('first_name', 'John')}")
+                first_name = personal_info.get('first_name', '')
+                if first_name:
+                    page.insert_text((x, y), first_name, 
+                                   fontsize=self.font_size, color=(0, 0, 0))
+                    print(f"Filling first_name at ({x}, {y}): {first_name}")
             
             if 'last_name' in coordinates:
                 x, y = coordinates['last_name']
-                page.insert_text((x, y), personal_info.get('last_name', 'Doe'), 
-                               fontsize=self.font_size, color=(0, 0, 0))
-                print(f"Filling last_name at ({x}, {y}): {personal_info.get('last_name', 'Doe')}")
+                last_name = personal_info.get('last_name', '')
+                if last_name:
+                    page.insert_text((x, y), last_name, 
+                                   fontsize=self.font_size, color=(0, 0, 0))
+                    print(f"Filling last_name at ({x}, {y}): {last_name}")
             
             if 'ssn_main' in coordinates:
                 x, y = coordinates['ssn_main']
-                page.insert_text((x, y), personal_info.get('ssn', '123-45-6789'), 
-                               fontsize=self.font_size, color=(0, 0, 0))
-                print(f"Filling ssn_main at ({x}, {y}): {personal_info.get('ssn', '123-45-6789')}")
+                ssn = personal_info.get('ssn', '')
+                if ssn:
+                    page.insert_text((x, y), ssn, 
+                                   fontsize=self.font_size, color=(0, 0, 0))
+                    print(f"Filling ssn_main at ({x}, {y}): {ssn}")
             
             if 'address' in coordinates:
                 x, y = coordinates['address']
-                page.insert_text((x, y), personal_info.get('address', '456 Personal Ave'), 
-                               fontsize=self.font_size, color=(0, 0, 0))
-                print(f"Filling address at ({x}, {y}): {personal_info.get('address', '456 Personal Ave')}")
+                address = personal_info.get('address', '')
+                if address:
+                    page.insert_text((x, y), address, 
+                                   fontsize=self.font_size, color=(0, 0, 0))
+                    print(f"Filling address at ({x}, {y}): {address}")
             
             if 'city' in coordinates:
                 x, y = coordinates['city']
-                page.insert_text((x, y), personal_info.get('city', 'Hometown'), 
-                               fontsize=self.font_size, color=(0, 0, 0))
-                print(f"Filling city at ({x}, {y}): {personal_info.get('city', 'Hometown')}")
+                city = personal_info.get('city', '')
+                if city:
+                    page.insert_text((x, y), city, 
+                                   fontsize=self.font_size, color=(0, 0, 0))
+                    print(f"Filling city at ({x}, {y}): {city}")
             
             if 'state' in coordinates:
                 x, y = coordinates['state']
-                page.insert_text((x, y), personal_info.get('state', 'CA'), 
-                               fontsize=self.font_size, color=(0, 0, 0))
-                print(f"Filling state at ({x}, {y}): {personal_info.get('state', 'CA')}")
+                state = personal_info.get('state', '')
+                if state:
+                    page.insert_text((x, y), state, 
+                                   fontsize=self.font_size, color=(0, 0, 0))
+                    print(f"Filling state at ({x}, {y}): {state}")
             
             if 'zip' in coordinates:
                 x, y = coordinates['zip']
-                page.insert_text((x, y), personal_info.get('zip', '67890'), 
-                               fontsize=self.font_size, color=(0, 0, 0))
-                print(f"Filling zip at ({x}, {y}): {personal_info.get('zip', '67890')}")
+                zip_code = personal_info.get('zip', '')
+                if zip_code:
+                    page.insert_text((x, y), zip_code, 
+                                   fontsize=self.font_size, color=(0, 0, 0))
+                    print(f"Filling zip at ({x}, {y}): {zip_code}")
             
             # Filing Status checkbox - make it larger
             filing_status = personal_info.get('filing_status', 'single')
