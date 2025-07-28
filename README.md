@@ -2,7 +2,7 @@
 
 A comprehensive end-to-end prototype for automating personal tax return preparation. This system allows users to upload standard tax documents (W-2, 1099-INT, 1099-NEC), extracts relevant data using advanced parsing techniques, calculates tax liability, and generates a completed IRS Form 1040.
 
-## 🚀 Features
+##  Features
 
 ### Core Functionality
 - **Multi-Document Upload**: Support for W-2, 1099-INT, and 1099-NEC forms
@@ -17,7 +17,7 @@ A comprehensive end-to-end prototype for automating personal tax return preparat
 - **Progress Tracking**: Step-by-step workflow with clear status indicators
 - **Download Ready Forms**: Generated Form 1040 ready for submission
 
-## 🛠 Technical Stack
+##  Technical Stack
 
 ### Frontend
 - **React 18** with TypeScript
@@ -43,7 +43,7 @@ A comprehensive end-to-end prototype for automating personal tax return preparat
 - **Marginal Tax Calculation**: Accurate tax liability computation
 - **AGI and Taxable Income**: Complete tax computation pipeline
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 AI Tax Agent/
@@ -79,7 +79,7 @@ AI Tax Agent/
 └── README.md                 # This file
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Python 3.8+
@@ -145,7 +145,7 @@ npm start
 - **Complete Verification**: `backend/test_complete_form_verification.py` - End-to-end testing
 
 
-## 📊 Sample Data
+##  Sample Data
 
 The system includes realistic IRS forms for testing:
 - `filled-w2.pdf` - Sample W-2 with wages and withholding
@@ -153,7 +153,7 @@ The system includes realistic IRS forms for testing:
 - `filled-1099nec.pdf` - Sample 1099-NEC with self-employment income
 - `blank-1040.pdf` - Official IRS Form 1040 template
 
-## 🔒 Security & Validation
+##  Security & Validation
 
 - **File Type Validation**: Only PDF files accepted
 - **Size Limits**: Configurable file size restrictions
@@ -161,7 +161,7 @@ The system includes realistic IRS forms for testing:
 - **Input Validation**: Comprehensive form field validation
 - **Error Handling**: Graceful error responses
 
-## 🚀 Production Considerations
+##  Production Considerations
 
 - **Environment Variables**: Configure for production deployment
 - **Database Integration**: Replace file storage with database
@@ -170,7 +170,7 @@ The system includes realistic IRS forms for testing:
 - **Testing**: Add unit and integration tests
 - **Documentation**: API documentation with Swagger/OpenAPI
 
-## 📝 License
+##  License
 
 This is a prototype project for educational and demonstration purposes.
 
